@@ -1,0 +1,21 @@
+on:
+  rss:
+    url: https://feeds.bbci.co.uk/learningenglish/english/features/6-minute-english/rss
+    config:
+      timeZone: UTC
+      every: "0 22 * * 4"
+      limit: 1
+jobs:
+  telegram:
+    name: Send a telegram message
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send a telegram message
+        uses: appleboy/telegram-action@v0.1.0
+        with:
+          to: 786143398
+          token: 1748509976:AAEEmAsFqee60IpP0_Kp553O-FtM88zJ-Kw
+          message: |
+            ${{on.rss.outputs.title}}
+            ${{on.rss.outputs.link}}
+          format: markdown

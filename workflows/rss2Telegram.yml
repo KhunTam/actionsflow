@@ -1,0 +1,24 @@
+on:
+  rss:
+    url:
+    - https://sspai.com/feed
+    - https://www.ifanr.com/feed
+    - https://alexstshiu.blogspot.com/feeds/posts/default
+    - https://www.cup.com.hk/author/chip/feed
+    - https://applefans.today/feed/
+    config:
+      every: "* */1 * * *"
+jobs:
+  telegram:
+    name: Send a telegram message
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send a telegram message
+        uses: appleboy/telegram-action@v0.1.0
+        with:
+          to: 786143398
+          token: 1748509976:AAEEmAsFqee60IpP0_Kp553O-FtM88zJ-Kw
+          message: |
+            ${{on.rss.outputs.title}}
+            ${{on.rss.outputs.link}}
+          format: markdown
