@@ -3,8 +3,8 @@ on:
   weather:
     apiKey: 335d00871dc2192373c7369166f64175
     params:
-      lat: 23.0268
-      lon: 113.1315
+      lat: 1.340
+      lon: 103.707
       units: metric
     every: "30 22 * * *"
     timeZone: UTC
