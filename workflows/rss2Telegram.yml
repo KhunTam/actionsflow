@@ -2,7 +2,7 @@ on:
   rss:
     url:
     - https://sspai.com/feed
-    - https://www.ifanr.com/feed
+    # - https://www.ifanr.com/feed
     - https://alexstshiu.blogspot.com/feeds/posts/default
     - https://www.cup.com.hk/author/chip/feed
     - https://applefans.today/feed/
