@@ -6,7 +6,7 @@ on:
       lat: 1.329
       lon: 103.648
       units: metric
-    every: "00 8 * * *"
+    every: "00 8 * * 1-6"
     timeZone: UTC
     filter:
       "daily.0.weather.0.main":
