@@ -7,7 +7,7 @@ on:
     - https://www.cup.com.hk/author/chip/feed
     - https://applefans.today/feed/
     config:
-      every: "* */1 * * *"
+      every: "* */4 * * *"
 jobs:
   telegram:
     name: Send a telegram message
