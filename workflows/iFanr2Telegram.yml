@@ -3,7 +3,7 @@ on:
     url:
      - https://www.ifanr.com/feed
     config:
-      every: "* */6 * * *"
+      every: "0 */12 * * *"
 jobs:
   telegram:
     name: Send a telegram message
