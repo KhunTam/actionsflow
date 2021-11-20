@@ -3,7 +3,7 @@ on:
     url: https://feeds.bbci.co.uk/learningenglish/english/features/6-minute-english/rss
     config:
       timeZone: UTC
-      every: "0 22 * * 4"
+      every: "0 22 * * 5"
       limit: 1
 jobs:
   telegram:
