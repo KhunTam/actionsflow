@@ -13,7 +13,7 @@ jobs:
         uses: appleboy/telegram-action@v0.1.0
         with:
           to: 786143398
-          token: 1748509976:AAEEmAsFqee60IpP0_Kp553O-FtM88zJ-Kw
+          token: 1748509976:AAF_dKwGcPRt7wToKrG2AakaB1T8T9_J0pw
           message: |
             ${{on.rss.outputs.title}}
             ${{on.rss.outputs.link}}
