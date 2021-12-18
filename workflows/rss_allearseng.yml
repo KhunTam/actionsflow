@@ -1,6 +1,6 @@
 on:
   rss:
-    url: https://www.allearsenglish.com/general-fluency/rss
+    url: https://www.allearsenglish.com/category/english-fluency/rss
     config:
       timeZone: UTC
       every: "0 0 * * *"
