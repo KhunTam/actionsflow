@@ -6,7 +6,7 @@ on:
     config:
       timeZone: UTC
       every: "0 0 * * 5"
-      limit: 1
+      limit: 2
 jobs:
   telegram:
     name: Send a telegram message
