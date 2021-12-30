@@ -1,6 +1,8 @@
 on:
   rss:
-    url: https://feeds.bbci.co.uk/learningenglish/english/features/6-minute-english/rss
+    url: 
+    - https://feeds.bbci.co.uk/learningenglish/english/features/6-minute-english/rss
+    - https://feeds.bbci.co.uk/learningenglish/english/features/lingohack/rss
     config:
       timeZone: UTC
       every: "0 0 * * 5"
